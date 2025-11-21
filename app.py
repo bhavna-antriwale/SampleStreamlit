@@ -12,6 +12,6 @@ upload_image = st.file_uploader('Upload an image (.jpg) file: ', type=["jpg", "j
 if upload_image is not None:
     # Open the uploaded file as an image using PIL
     image = Image.open(upload_image)
-    st.image(image, caption="Uploaded Image", use_container_width=True)
+    st.image(image, caption="Uploaded Image", `width='stretch'`)
 else:
     st.write("Please upload an image file.")
